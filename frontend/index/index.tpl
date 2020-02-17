@@ -35,7 +35,7 @@
             <ul class="navigation--sub navigation--sub-5">
                 <img src="/media/image/07/7a/b8/icon-catering-w.png">
             
-                <li class="navigation--sub-entry"role="menuitem"><a class="navigation--sub-link"href="http://test.daily-catering.de/catering/kita-catering/"title="KITA Catering"itemprop="url"> <span itemprop="name">KITA Catering</span></a></li>
+                <li class="navigation--sub-entry"role="menuitem"><a class="navigation--sub-link"href="/catering/kita-catering/"title="KITA Catering"itemprop="url"> <span itemprop="name">KITA Catering</span></a></li>
                 
                 <li class="navigation--sub-entry"role="menuitem"><a class="navigation--sub-link"href="http://test.daily-catering.de/catering/business-catering/"title="BUSINESS CATERING"itemprop="url"> <span itemprop="name">BUSINESS CATERING</span></a></li>
                 
