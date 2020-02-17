@@ -25,21 +25,20 @@ class Theme extends \Shopware\Components\Theme
     
     protected $extend = 'Responsive';
 
-    protected $name = <<<'SHOPWARE_EOD'
-DY Theme
-SHOPWARE_EOD;
+    protected $name = 'DY Theme';
 
-    protected $description = <<<'SHOPWARE_EOD'
+    /** @var string Description of the theme */
+    protected $description = 'DAILY YOU CUSTOM THEME';
 
-SHOPWARE_EOD;
+    /** @var string The author of the theme */
+    protected $author = 'Amir Fayaz';
 
-    protected $author = <<<'SHOPWARE_EOD'
-WILDES MÄDCHEN
-SHOPWARE_EOD;
+    /** @var string License of the theme */
+    protected $license = 'MIT';
 
-    protected $license = <<<'SHOPWARE_EOD'
+    protected $injectBeforePlugins = false;
 
-SHOPWARE_EOD;
+    protected $inheritanceConfig = false;    
 
     public function createConfig(Form\Container\TabContainer $container)
     {
