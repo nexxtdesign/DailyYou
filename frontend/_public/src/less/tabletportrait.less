@@ -1,0 +1,276 @@
+/*=================================================**/
+/* tablet portrait **/
+/*=================================================**/
+
+@media screen and(min-width: @tabletViewportWidth) {
+
+/* TOOLTIP */
+a.tooltip {
+    position: relative;
+    text-decoration: none;
+  }
+  a.tooltip:after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 0;
+    left: -75px !important;
+    background: #fff;
+    padding: 15px 20px;
+    color: black;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    white-space: nowrap;
+    opacity: 0;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;   
+  }
+
+  a.tooltip:before { 
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 10px solid #fff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    opacity: 0;
+    left: -50px;
+    top: 0px !important;
+      
+      
+  }
+  a.tooltip:hover:after {
+    bottom: 100%;
+  }
+  a.tooltip:hover:before {
+    bottom: 70%;
+  }
+  a.tooltip:hover:after, a:hover:before {
+    opacity: 1;
+  }
+    
+    /* HEADLINES **/
+
+h1 {font-size:68px; line-height:68px; text-transform:uppercase;font-weight:700;color:#000;margin:0 0 20px 0;}
+h2 {font-size:26px; line-height:32px; text-transform:uppercase;font-weight:700;color:#000;margin:0 0 20px 0;text-align: left;}
+h3 {font-size:20px; line-height:24px; text-transform:none;font-weight:700;color:#000;margin:0;margin:0 0 20px 0;}
+h4 {font-size:18px; line-height:48px; text-transform:uppercase;font-weight:700;color:#000;}
+h5 {font-size:18px; line-height:48px; text-transform:uppercase;font-weight:700;color:#000;}
+h6 {font-size:14px; line-height:14px; text-transform:uppercase;font-weight:400;color:#000;letter-spacing: 1px;margin: 0 0 20px 0;}
+h1 .white {font-size:68px; line-height:68px; text-transform:uppercase;font-weight:700;color:#fff;margin:0;}
+h2 .white {font-size:26px; line-height:32px; text-transform:uppercase;font-weight:700;color:#fff;margin:0 0 20px 0;text-align: left;}
+h3 .white {font-size:20px; line-height:24px; text-transform:none;font-weight:700;color:#fff;margin:0 0 20px 0;}
+h4 .white {font-size:18px; line-height:48px; text-transform:uppercase;font-weight:700;color:#fff;}
+h5 .white {font-size:18px; line-height:48px; text-transform:uppercase;font-weight:700;color:#fff;}
+h6 .white {font-size:14px; line-height:14px; text-transform:uppercase;font-weight:400;color:#fff;letter-spacing: 1px;margin: 0 0 20px 0;}
+
+/* ALLGEMEIN **/
+body {font-size:16px; line-height:24px; text-transform:none;font-weight:400;color:#000;margin:0;}
+.panel--body {font-size: 18px;line-height: 24px;}  
+.panel--body.is--wide {padding: 25px;text-align: center;}    
+p {text-align: left;hyphens: auto;}
+.dycolSingleImgEvLeft {width: 110%;float: left;padding: 0;margin-left: -40px !important;text-align: left !important;margin-top: 0px;z-index: 999;position: relative;}
+    .strichelkasten {width:80% !important;margin: -250px auto 0 !important;}
+.kasten {border: 2px dashed #e2e3e2;padding: 40px 10px 20px 35px !important;margin-top: -153px;text-align: center !important;}
+.dycolSingleImgUber {width: 40%;float: right;padding: 0;min-width: 40%;margin-right: -20px !important;text-align: left!important;margin-top: -250px;z-index: 999;position: relative;}
+    .dycolImgUber {width: 100%;float: right;padding: 0;min-width: 100%;margin-right: -20px !important;text-align: left!important;margin-top: -250px;z-index: 999;position: relative;}  
+.footer-main .footer--column {
+    padding: 0px 10px 0px 0px;
+    padding: 0rem .625rem 0rem 0rem;
+    width: 25%;
+    border: 0 none;
+}
+.footer-main .footer--column.is--first {
+    padding-right: 0;
+    border-bottom: 0 none;
+     width: 50%!important;
+    padding-top: 30px;
+}    
+.product--table .basket--footer {
+    margin: 0px -20px -20px -20px;
+    margin: 0rem -1.25rem -1.25rem -1.25rem;
+    border-top: 1px solid #dadae5;
+    background: transparent;
+}
+    .product--table {
+    margin-top: auto;
+    margin-top: 2.8125rem;
+    color: #fff !important;
+}
+    .product--table .panel--body {
+    padding: 20px 20px 20px 20px;
+    padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+    border: 1px solid #fff;
+    background: #0f150d;
+}
+    .panel--th {
+    font-weight: 700;
+    color: #fff;
+}
+    .product--table .content--title {
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+}
+    label {
+    font-size: 14px;
+    font-size: .875rem;
+    color: #fff;
+    font-weight: bold;
+}
+    .content-main--inner {
+    padding: 0 !important;
+    background: transparent !important;
+}
+    .aggregation--list .entry--total {
+    font-weight: 700;
+    color: #fff;
+}
+  /*  .forms--content input {
+    margin-bottom: 15px;
+    margin-bottom: .9375rem;
+    width: 48%;
+    float: left;
+    margin-right: 20px;
+}*/
+    .product--box .box--content {
+    padding: 0;
+    border: 0px solid #fff;
+}
+    /*.product--box .product--image .image--element img {
+    width: 100%;
+}*/
+
+    .product--box .product--title {
+    color: #fff;
+    padding: 0 15px;
+            height: 15px;
+}
+.box--minimal .product--price-info {
+    height: 50px;
+    padding: 0 15px;
+    color: #fff;
+}
+    .box--minimal .product--price-outer {
+    height: 10px;
+    position: relative;
+    color: #fff !important;
+}
+    .box--minimal .product--price-info .price--unit {
+    color: #fff;
+        height: 10px;
+}
+    .product-slider--container.is--horizontal, .product-slider--container.is--vertical {
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 1260px;
+        text-align: center;
+}
+    .product-slider--item {width: auto;}
+    
+/* SLIDER ALLGEMEIN **/    
+/*.slidecontainer {background: none!important;}*/
+/*.almAdventureSlider .alm--adventure-slider-wrapper .alm--adventure-slider-inner .adventure-swiper-container .swiper-wrapper {background: url('/media/image/5a/82/e9/betriebs-bg-green-big-v2.jpg') !important;background-position: center !important;background-size: contain !important;background-repeat: no-repeat !important;}*/
+ .dycolslideheart {width: 100%;float: none;padding: 40px 60px!important;margin: 0px auto 0!important;color: #fff!important;text-align: center;background: none!important;background-image:none!important;min-height: 50px!important;}
+.dycolslideheart h2 {color:#fff!important;}
+
+    .dycolslideherzw {
+    height: 335px;
+}
+    
+
+/* SLIDER BETRIEB **/    
+.slidecontainerBetrieb {max-width: 1260px;max-width: 78.75rem;margin: 0 auto;padding:80px 50px;min-height:800px;background:url('/media/image/51/35/61/betriebsrestaurants-header-big.jpg');background-repeat: no-repeat;}
+
+/* DAILY YOU COLUMNS **/
+.dycol {width: 100%;float: none;padding: 0;margin: 0 auto;color: inherit;text-align: center;}    
+.dycolSingle {width: 100%; float: none; padding: 0px 20px 20px;margin-right: 0px !important;text-align: left;}
+.dycolSingleLeft  {width: 100%;float: none; padding: 0px 20px 20px;margin-right: 0px !important;text-align: left!important;}
+.dycolSingleImg {width: 50%;float: right;padding: 0;min-width: 50%;margin-right: -20px !important;text-align: left!important;margin-top: -150px;}
+.dycolSingleImgLeft {width: 50%;float: left;padding: 0;min-width: 50%;margin-left: -20px !important;text-align: left!important;margin-top: -150px;}
+    
+/*DY CONTAINER STARTSEITE **/
+.dycontainergreen { width: 100%;background-image: url('/media/image/b7/e6/ac/banner-green.gif');background-repeat: no-repeat;background-size: cover;background-position: top left;margin-top: -272px;background-color: transparent !important;min-height: 1000px;  }
+.dycontainergreeninner { max-width: 1260px;max-width: 78.75rem;margin: 0 auto;background-color: transparent !important;padding:650px 50px 0;}
+
+/*DY CONTAINER KITA **/
+.dyContainerKitaEins {width: 100%;background-image:url('/media/image/7b/f1/7f/tafelbg-big.gif');background-repeat: no-repeat;background-size: cover;background-position:bottom;background-color: #2a2c27!important; margin-top:0px;}  
+.dyContainerKitaEinsInner {max-width: 1260px;max-width: 78.75rem;margin: 0 auto;background-color: transparent !important;padding:300px 20px 0;color:#000!important;}    
+.dyContainerKitaZwei {width: 100%;background-color: #2a2c27!important; margin-top:0px;}       
+.dyContainerKitaZweiInner {max-width: 1260px;max-width: 78.75rem;margin: 0 auto;background-color: transparent!important;padding:50px 20px 0;color:#000!important;}    
+.dyContainerKitaDrei {width: 100%;background-color: #fff!important; margin-top:0px;}      
+.dyContainerKitaDreiInner {max-width: 1260px;max-width: 78.75rem;margin: 0 auto;background-color: transparent!important;padding:80px 20px 0;color:#000!important;}  
+.dyContainerKitaVier {width: 100%;background-color: #2a2c27!important; margin-top:0px;}      
+.dyContainerKitaVierInner {max-width: 1260px;max-width: 78.75rem;margin: 0 auto;background-color: transparent!important;padding:0px 20px 0;color:#000!important;}    
+.dyContainerKitaVier img {margin-top:-37px;}
+.dyContainerKitaFuenf {width: 100%;background-color: #2a2c27!important; margin-top:0px;}    
+.dyContainerKitaFuenfInner {max-width: 1260px;max-width: 78.75rem;margin: 0 auto;background-color: transparent!important;padding:0px 20px 0;color:#000!important;}    
+
+/*DY CONTAINER BETRIEBSRESTAURANTS **/
+
+.dycontainergreenBetriebEins {width: 100%;background-image:url('/media/image/51/35/61/betriebsrestaurants-header-big.jpg');background-repeat: no-repeat;background-size: cover;background-position:top;margin-top:0px;background-color: transparent !important;padding:80px 50px;min-height:690px;}
+.dycontainergreeninnerBetriebEins {max-width: 1260px;max-width: 78.75rem;margin: 0 auto;background-color: transparent !important;padding:120px 20px 0;}
+.dycontainergreenBetriebZwei {width: 100%;background-image:url('/media/image/55/21/87/betriebs-bg-green-mobil.jpg');background-repeat: no-repeat;background-size: cover;background-position:bottom;margin-top:0px;background-color: transparent !important;}
+.dycontainergreeninnerBetriebZwei {max-width: 1260px;max-width: 78.75rem;margin: 0 auto;background-color: transparent !important;padding:120px 20px 0;}
+.dycontainergreenBetriebDrei {width: 100%;background:none;margin-top:0px;}
+.dycontainergreeninnerBetriebDrei {max-width: 1260px;max-width: 78.75rem;margin: 0 auto;background-color: transparent !important;padding:50px 20px 0;}
+.dycontainergreenBetriebVier {width: 100%;background-color:#f2f2f2;margin-top:0px;}
+.dycontainergreeninnerBetriebVier {max-width: 1260px;max-width: 78.75rem;margin: 0 auto;background-color: transparent !important;padding:50px 20px 0;}
+.dycontainergreenBetriebFuenf {width: 100%;background-color:#323530;margin-top:0px;}
+.dycontainergreeninnerBetriebFuenf {max-width: 1260px;max-width: 78.75rem;margin: 0 auto;background-color: transparent !important;padding:50px 20px 0;}
+
+/*DY CONTAINER BUSINESS CATERING **/
+.dycontainerBusinessEins {width: 100%;background-image:url('/media/image/09/3a/08/business-header-banner.jpg');background-repeat: no-repeat;background-size: cover;background-position:bottom;margin-top:0px;background-color: transparent !important;min-height:320px;}
+.dycontainerBusinessEinsInner {max-width: 1260px;max-width: 78.75rem;margin: 0 auto;background-color: transparent !important;padding: 380px 20px;}
+.dycontainerBusinessZwei {width: 100%;margin-top:0px;background-color: #585e56 !important;}
+.dycontainerBusinessZweiInner {max-width: 1260px;max-width: 78.75rem;margin: 0 auto;padding:120px 20px 0;}
+.dycontainerBusinessDrei {width: 100%;background:none;margin-top:0px;}
+.dycontainerBusinessDreiInner {max-width: 1260px;max-width: 78.75rem;margin: 0 auto;background-color: transparent !important;padding:150px 20px 0;}
+.dycontainerBusinessVier {width: 100%;background-image:url('/media/image/01/07/a1/business-banner.jpg');background-repeat: no-repeat;background-size: cover;background-position:bottom;margin-top:0px;background-color: transparent !important;min-height:320px;}
+.dycontainerBetriebVierInner {max-width: 1260px;max-width: 78.75rem;margin: 0 auto;background-color: transparent !important;padding:50px 20px 0;}
+
+/*DY CONTAINER EVENT CATERING **/
+.dycontainerEventEins {width: 100%;background-image:url('/media/image/52/8d/cf/event-catering-header-banner.jpg');background-repeat: no-repeat;background-size: cover;background-position:center;margin-top:0px;background-color: transparent !important;min-height:320px;}
+.dycontainerEventEinsInner {max-width: 1260px;max-width: 78.75rem;margin: 0 auto;background-color: transparent !important;padding: 200px 20px;}
+.dycontainerEventZwei {width: 100%;margin-top:0px;background-color: #e2e3e2 !important;}
+.dycontainerEventZweiInner {max-width: 1260px;max-width: 78.75rem;margin: 0 auto;padding:120px 20px 0;}
+.dycontainerEventDrei {width: 100%;background:none;margin-top:0px;}
+.dycontainerEventDreiInner {max-width: 1260px;max-width: 78.75rem;margin: 0 auto;background-color: transparent !important;padding:150px 20px 0;}    
+    
+    .dycontainerUberEins {width: 100%;background-image:url('http://test.daily-catering.de/media/image/18/cd/7c/image_company_herz_v2.jpg');background-repeat: no-repeat;background-size: cover;background-position:bottom;margin-top:0px;background-color: transparent !important;min-height:320px;}
+.dycontainerUberInner {max-width: 1260px;max-width: 78.75rem;margin: 0 auto;background-color: transparent !important;padding: 280px 20px;}
+    
+/* BLOG **/
+.emotion--blog .blog--entry {height: 270px;width: 50% !important;float: left !important;margin-bottom: 4px;
+}
+    .blog--box {
+    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
+    width: 50%;
+    float: left;
+}
+    
+}
+
+/* SHOP **/
+
+.confirm--content .information--panel-wrapper .information--panel-item.information--panel-address {
+    width: 33%;
+}
+.confirm--content .information--panel-item.information--panel-address .panel--body .billing--panel {
+    float: none;
+    width: 100%;
+    clear: both;
+}
+.confirm--content .information--panel-item.information--panel-address .panel--body .shipping--panel {
+    float: none;
+    width: 100%;
+    margin: 10px 0;
+}
+.confirm--content .information--panel-wrapper .information--panel-item {
+    padding: 0% 0 0 2%;
+    float: left;
+        border-right: 1px solid #333;
+}

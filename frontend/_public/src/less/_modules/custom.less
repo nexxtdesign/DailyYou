@@ -1,0 +1,39 @@
+.custom-page--content {
+	padding-top: 600px;
+	padding-left: 20px;
+    padding-right: 20px;
+	
+	.dycontainerUberEins {
+		position: absolute;
+    	top: 50px;
+    	left: 0px;
+	}
+}
+
+@media screen and(min-width: @tabletViewportWidth) {
+	.custom-page--content {
+		padding-top: 550px;
+		padding-right: 0px;
+		
+		.dycontainerUberEins {
+	    	top: 100px;
+		}
+	}
+}
+
+@media screen and(min-width: @tabletLandscapeViewportWidth) {
+	.custom-page--content {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
+@media screen and(min-width: @desktopViewportWidth) {
+	.custom-page--content {
+		padding-top: 700px;
+		
+		.dycontainerUberEins {
+	    	top: -20px;
+		}
+	}
+}

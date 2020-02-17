@@ -1,0 +1,90 @@
+.listing--categories {
+	color: #ffffff;
+	text-align: center;
+	font-size: 11px;
+	opacity: 0;
+	
+	.listing--categoriestop {
+		padding-bottom: 15px;
+	}
+	
+	.listing--categoriesbottom {
+		margin-top: 20px;
+		
+		a {
+			padding: 0px 10px;
+			
+			&.is--active {
+				color: #93c351;
+			}
+		}
+		
+		.category--line {
+			margin: 0 auto;
+    		width: 489px;
+		}
+	}
+	
+	.listing--category {
+		display: inline-block;
+		position: relative;
+		
+		img {
+			display: inline;
+			max-width: 80px
+		}
+		
+		a {
+			display: block;
+			width: 110px;
+		}
+		
+		.category--selected {
+			position: absolute;
+    		top: 18px;
+    		left: 39px;
+		}
+	}
+	
+	& + .opener {
+		position: absolute;
+    	left: 0;
+    	right: 0;
+    	margin: 0 auto;
+    	display: block;
+    	text-align: center;
+    	width: 100px;
+    	color: #ffffff;
+    	
+    	i {
+    		font-size: 8px;
+		    position: relative;
+		    left: 10px;
+		    top: -2px;
+    	}
+	}
+}
+
+.emotion--show-listing {
+	&.is--align-center {
+		display: none;
+	}
+}
+
+@media screen and (min-width: @desktopViewportWidth) {
+	.listing--categories {
+		opacity: 1;
+		
+		.listing--categoriestop {
+			padding-bottom: 0px;
+		}
+		
+		& + .opener {
+			display: none;
+		}
+	}
+	
+	.listing--actions {
+		display: none;
+	}
+}

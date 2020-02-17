@@ -1,0 +1,40 @@
+.information--panel-item-billing {
+	.panel--actions {
+		display: none;
+	}
+}
+
+.address--actions-change {
+	a {
+		&:first-child {
+			display: none;
+		}
+	}
+}
+
+#shippingPaymentForm {
+	& > .confirm--actions {
+		display: none;
+	}
+}
+
+#bpa_delivery_date--form {
+	display: none;
+}
+
+@media screen and(min-width: @tabletLandscapeViewportWidth) {
+	.payment--panel {
+		&.panel.has--border.block.information--panel {
+			position: absolute;
+		    top: 60px;
+		    right: 0;
+		    text-align: left !important;
+		}
+		
+		.panel--title {
+			&.is--underline {
+				text-align: left !important;
+			}
+		}
+	}
+}
