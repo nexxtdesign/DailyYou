@@ -13,14 +13,14 @@ class Theme extends \Shopware\Components\Theme
      */
     protected $javascript = [
   
-        //'src/aos/aos.js',
-        //'src/js/custom.js',
+        'src/aos/aos.js',
+        'src/js/custom.js',
         
 
     ];
  
     protected $css = array(
-    //'src/aos/aos.css'
+    'src/aos/aos.css'
 );
     
     protected $extend = 'Responsive';
