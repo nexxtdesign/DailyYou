@@ -1,213 +1,55 @@
-.steps--container {
-    &.container {
-    	position: fixed;
-	    top: 77px;
-	    z-index: 1;
-	    left: 0;
-	    right: 0;
-    }
+.register--login {
+  .register--existing-customer {
+    background: @gray;
+    .unitize-padding(10, 20);
+  }
 }
 
 .register--content {
-	.register--field {
-		width: 290px;
-	}
-	
-	.select-field {
-		width: 290px;
-		margin-bottom: 10px;
-	}
-	
-	.register--zip-city {
-		.register--field-zipcode {
-			width: 290px;
-			margin-right: 20px;
-		}
-		
-		.register--field-city {
-			width: 290px;
-			margin-right: 0px;
-		}
-	}
+  .register--form {
+    .unitize-padding(10, 20);
+  }
+}
+.steps--content {
+
+  border: 0 none;
+
+  .steps--list {
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+  .steps--entry {
+    font-family: @custom-theme-font-headline;
+    text-align: center;
+    display: block;
+    width: 33.33%;
+    float: left;
+
+    .icon {
+      display: block;
+      margin: 0 auto;
+      font-weight: normal;
+      background: transparent;
+      .border-radius(0);
+      color: @brand-secondary;
+    }
+    .text {
+      font-weight: normal;
+      height: auto;
+      text-align: center;
+      margin: 0;
+    }
+
+    &.is--active {
+      .icon {
+        color: @brand-primary;
+      }
+      .text--inner {
+        border-bottom: 1px solid;
+      }
+    }
+  }
 }
 
-.register--personal {
-	.panel--body {
-		margin: 0 auto;
-		max-width: 600px;
-		
-		& > div {
-			width: 290px;
-			float: left;
-			
-			&:nth-child(odd) {
-				margin-right: 20px;
-				clear: both;
-			}
-			
-			&.register--email {
-				margin-right: 20px;
-			}
-			
-			&.register--account-information {
-				clear: none;
-				margin-right: 0px;
-				text-align: left;
-			}
-		}
-	}
-}
 
-.register--company {
-	.panel--body {
-		margin: 0 auto;
-		max-width: 600px;
-		
-		& > div {
-			width: 290px;
-			float: left;
-			
-			&:nth-child(odd) {
-				margin-right: 20px;
-			}
-		}
-	}
-}
-
-.register--address {
-	.panel--body {
-		margin: 0 auto;
-		max-width: 600px;
-		
-		& > div {
-			float: left;
-			
-			&.register--street {
-				width: 290px;
-				
-				input {
-					width: 100%;
-				}
-			}
-			
-			&.register--zip-city {
-				width: 100%;
-			}
-		}
-	}
-}
-
-.register--shipping {
-	.panel--body {
-		margin: 0 auto;
-		max-width: 600px;
-		
-		& > div {
-			width: 290px;
-			float: left;
-			
-			&:nth-child(odd) {
-				margin-right: 20px;
-			}
-			
-			&.register--street {
-				width: 290px;
-				
-				input {
-					width: 100%;
-				}
-			}
-			
-			&.register--zip-city {
-				width: 100%;
-			}
-		}
-	}
-}
-
-.register--login {
-	.register--new-customer {
-		.new-customer-btn {
-			margin-left: 20px;
-    		margin-right: 20px;
-    		width: calc(~"100% - 40px");
-		}
-	}
-}
-
-.register--existing-customer {
-	&.panel {
-		background: transparent;
-    	border-right: 1px solid #4a4a4a !important;
-    	padding: 0 50px 0px 0;
-	}
-}
-
-.is--act-shippingpayment {
-	.product--table {
-		.table--actions {
-			margin-top: 60px;
-		}
-	}
-}
-
-@media screen and(min-width: @tabletViewportWidth) {
-	.register--login {
-		width: auto;
-	}
-	
-	.register--content {
-		width: auto;
-		margin-top: 0px;
-	}
-	
-	.is--ctl-register {
-		.content--wrapper {
-			display: flex;
-	    	flex-flow: column-reverse;
-		}
-	}
-}
-
-@media screen and (min-width: @desktopViewportWidth) {
-	.register--address {
-		.panel--body {
-			& > div {
-				&.register--street {
-					width: 100%;
-				}
-			}
-		}
-	}
-	
-	.register--shipping {
-		.panel--body {
-			& > div {
-				&.register--street {
-					width: 100%;
-				}
-			}
-		}
-	}
-	
-	.register--login {
-		width: 34%;
-	}
-	
-	.register--content {
-		width: 64%;
-		margin-top: 50px;
-	}
-	
-	.register--existing-customer {
-		&.panel {
-	    	padding: 0 50px 150px 0;
-		}
-	}
-	
-	.is--ctl-register {
-		.content--wrapper {
-			display: block;
-		}
-	}
-}

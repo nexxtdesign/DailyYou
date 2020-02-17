@@ -1,33 +1,28 @@
+.filter-panel {
+  background: transparent;
+  border-color: @border-color;
+
+  .filter-panel--icon {
+    .unitize(font-size, 6);
+    .unitize(top, 12);
+
+    &:before {
+      content: @sw-icon-arrow-down;
+    }
+  }
+  &.is--collapsed {
+    .filter-panel--icon {
+      &:before {
+        content: @sw-icon-arrow-up;
+      }
+    }
+  }
+}
+
 .filter-panel--flyout {
-	label {
-		color: #fff;
-	    text-transform: uppercase;
-	    padding: 10px 0 0 16px;
-	}
+  .border-radius(0);
 }
 
-.facet--property {
-	.filter-panel--title {
-		display: none;
-	}
-}
-
-.filter-panel--title {
-	font-size: 14px !important;	
-}
-
-.input-type--media {
-	img {
-		height: 30px;
-    	padding-left: 5px;
-    	display: inline;
-	}
-	
-	span {
-		font-weight: normal;
-    	font-size: 14px;
-    	position: relative;
-    	top: -9px;
-    	font-size: 12px;
-	}
+.filter--active {
+  .border-radius(0);
 }

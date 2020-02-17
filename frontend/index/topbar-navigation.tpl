@@ -1,42 +1,34 @@
-{* Top bar main *}
-{block name="frontend_index_top_bar_main"}
-    <div class="top-bar">
+{extends file="parent:frontend/index/topbar-navigation.tpl"}
 
-        {* Top bar main container *}
-        {block name="frontend_index_top_bar_main_container"}
-            <div class="container block-group">
+{block name="frontend_index_top_bar_nav" prepend}
+    {if $theme.usp_settings_show}
+        <div class="top-bar--usp left">
+            <ul class="usp--inner">
+                {if $theme.custom_theme_usp_1}
+                    <li class="usp--item">
+                        <i class="icon{if $theme.custom_theme_usp_1_icon} {$theme.custom_theme_usp_1_icon}{else} icon--check{/if}"></i> <span>{s name="sIndexTopbarShipping" namespace="frontend/index/topbar"}Kostenlose Lieferung ab 50€{/s}</span>
+                    </li>
+                {/if}
+                {if $theme.custom_theme_usp_2}
+                    <li class="usp--item">
+                        <i class="icon{if $theme.custom_theme_usp_2_icon} {$theme.custom_theme_usp_2_icon}{else} icon--check{/if}"></i> <span>{s name="sIndexTopbarReturn" namespace="frontend/index/topbar"}30 Tage Rückgaberecht{/s}</span>
+                    </li>
+                {/if}
+                {if $theme.custom_theme_usp_3}
+                    <li class="usp--item">
+                        <i class="icon{if $theme.custom_theme_usp_3_icon} {$theme.custom_theme_usp_3_icon}{else} icon--check{/if}"></i> <span>{s name="sIndexTopbarShipping2" namespace="frontend/index/topbar"}Schnelle Lieferung{/s}</span>
+                    </li>
+                {/if}
+                {if $theme.custom_theme_usp_4}
+                    <li class="usp--item">
+                        <i class="icon{if $theme.custom_theme_usp_4_icon} {$theme.custom_theme_usp_4_icon}{else} icon--check{/if}"></i> <span>{s name="sIndexTopbarInvoice" namespace="frontend/index/topbar"}Kauf auf Rechnung{/s}</span>
+                    </li>
+                {/if}
+            </ul>
+        </div>
+    {/if}
+{/block}
 
-                {* Top bar navigation *}
-                {block name="frontend_index_top_bar_nav"}
-                    <nav class="top-bar--navigation block" role="menubar">
-
-                        {action module=widgets controller=index action=shopMenu}
-
-                        {* Article Compare *}
-                        {block name='frontend_index_navigation_inline'}
-                            {if {config name="compareShow"}}
-                                <div class="navigation--entry entry--compare is--hidden" role="menuitem" aria-haspopup="true" data-drop-down-menu="true">
-                                    {block name='frontend_index_navigation_compare'}
-                                        {action module=widgets controller=compare}
-                                    {/block}
-                                </div>
-                            {/if}
-                        {/block}
-
-                        {* Service / Support drop down *}
-                        {block name="frontend_index_checkout_actions_service_menu"}
-                            <div class="navigation--entry entry--service has--drop-down" role="menuitem" aria-haspopup="true" data-drop-down-menu="true">
-                                <i class="icon--service"></i> {s namespace='frontend/index/checkout_actions' name='IndexLinkService'}{/s}
-
-                                {* Include of the widget *}
-                                {block name="frontend_index_checkout_actions_service_menu_include"}
-                                    {include file="widgets/index/menu.tpl" sGroup=left}
-                                {/block}
-                            </div>
-                        {/block}
-                    </nav>
-                {/block}
-            </div>
-        {/block}
-    </div>
+{* Remove Service / Support drop down *}
+{block name="frontend_index_checkout_actions_service_menu"}
 {/block}
